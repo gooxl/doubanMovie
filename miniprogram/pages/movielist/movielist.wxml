@@ -1,0 +1,7 @@
+<!--pages/movielist/movielist.wxml-->
+<!-- 收藏的电影列表组件  -->
+<view class="movielist" wx:for="{{list}}" wx:key="index">
+  <text>{{item.msg}}</text>
+  <image wx:for="{{item.fileid}}" wx:key="index"
+  src="{{item}}"></image>
+</view>
